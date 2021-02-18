@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Registration app</title>
+</head>
+<body class="flex column align-center">
+    <header class="flex justify-space-around align-center">
+        <h1>Welcome! <a href="./profile.html"></a></h1>
+        <button id="sign-out">Sign out</button>
+    </header>
+    <div class="general">
+        <!--<div class="chat">
+            <p>Хэн нэгэн</p>
+            <span class="profile">Х</span>
+            <span class="text">
+                Энэ message - ний
+                content байрлана
+            </span>
+        </div>
+        <div class="chat owner">
+            <p>Хэн нэгэн</p>
+            <span class="profile">Х</span>
+            <span class="text">
+                Энэ message - ний
+                content байрлана
+            </span>
+        </div>
+        <div class="chat">
+            <p>Хэн нэгэн</p>
+            <span class="profile">Х</span>
+            <span class="text">
+                Энэ message - ний
+                content байрлана
+            </span>
+        </div>-->
+    </div>
+    <footer class="flex align-center">
+        <img src="./assets/image.svg" alt="img" />
+        <input type="text" placeholder="Your message here ..." class="flex-1" />
+        <button class="flex justify-center align-center">Send</button>
+    </footer>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDcb1aGkOoOqRDXy0R5X5SUJV-k60hm2go",
+            authDomain: "registration-1b9ea.firebaseapp.com",
+            projectId: "registration-1b9ea",
+            storageBucket: "registration-1b9ea.appspot.com",
+            messagingSenderId: "420182856884",
+            appId: "1:420182856884:web:81d105274f43d563c773e1",
+            measurementId: "G-PC87CY6R2C"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="./index.js"></script>
+</body>
+</html>
